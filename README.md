@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+I deployed the TokenizedBallot contract at block 1000, with the contract address being 0x5fbdb2315678afecb367f032d93f642f64180aa3. Then, I deployed the Token contract at the same address. Minted 10 tokens to account 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 and verified that the balance was updated correctly. After minting, I self-delegated all voting power for account 0x70997970c51812dc3a010c7d01b50e0d17dc79c8, ensuring full voting authority.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Following that, I transferred 5 tokens from account 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 to account 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc. I checked the past votes for account 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 and observed the voting power at different blocks. All interactions were successful, and transaction hashes were recorded for each successful transaction.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+For potential failures during function executions, appropriate revert reasons were provided. 
